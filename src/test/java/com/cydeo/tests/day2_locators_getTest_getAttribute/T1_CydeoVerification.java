@@ -14,6 +14,7 @@ public class T1_CydeoVerification {
         driver.manage().window().maximize();
 
        // 2. Go to https://practice.cydeo.com
+        driver.navigate().to("https://practice.cydeo.com");
 
        // 3. Verify URL contains
        // Expected: cydeo
