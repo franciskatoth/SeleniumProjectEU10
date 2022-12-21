@@ -18,8 +18,28 @@ public class T1_CydeoVerification {
 
        // 3. Verify URL contains
        // Expected: cydeo
+        String expectedURL = "cydeo";
+        String actualURL = driver.getCurrentUrl();
+
+        if (actualURL.contains(expectedURL)){
+            System.out.println("URL verification PASSED");
+        }else {
+            System.out.println("URL verification Failed");
+        }
+
+
+
        // 4. Verify title:
      //   Expected: Practice
+        String expectedTitle = "Practice";
+        String acutalTitle = driver.getTitle();
+
+        if (acutalTitle.equals(expectedTitle)){
+            System.out.println("Title verification PASSED");
+        }else {
+            System.out.println("Title verification FAILED");
+        }
+
 
 
 
