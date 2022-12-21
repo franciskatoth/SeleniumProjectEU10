@@ -11,6 +11,7 @@ public class T1_CydeoVerification {
        // 1. Open Chrome browser
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
 
        // 2. Go to https://practice.cydeo.com
 
