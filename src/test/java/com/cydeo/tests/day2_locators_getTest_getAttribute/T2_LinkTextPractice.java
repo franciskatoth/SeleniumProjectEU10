@@ -1,11 +1,12 @@
 package com.cydeo.tests.day2_locators_getTest_getAttribute;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class T2_LinkTextPractice {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         //TC #3: Back and forth navigation
         //1. Open Chrome browser
@@ -18,6 +19,12 @@ public class T2_LinkTextPractice {
         driver.get("https://practice.cydeo.com");
 
        // 3. Click to A/B Testing from top of the list.
+
+        Thread.sleep(2000);
+       driver.findElement(By.linkText("A/B Testing")).click();
+
+
+
        // 4. Verify title is:
        // Expected: No A/B Test
         //5. Go back to home page by using the .back();
