@@ -7,5 +7,7 @@ public class TC002 {
 
     // WORK 2 COMPLETED
 
+    // Added parte 3 as requested
+
     // Test case finished
 }
